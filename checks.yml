@@ -132,9 +132,10 @@ killaura:
   # Violation Thresholds
   # number_of_violations: '<command>'
   commands:
-    10: 'matrix npc %player% 100'
-    20: 'matrix notify %player% might be using combat hacks (KillAura)'
-    35: 'matrix notify %player% is using combat hacks (KillAura) #2'
+    #10: 'matrix npc %player% 100'
+    1: 'matrix notify %player% might be using combat hacks (KillAura)'
+    #20: 'matrix notify %player% might be using combat hacks (KillAura)'
+    #35: 'matrix notify %player% is using combat hacks (KillAura) #2'
     #45: 'matrix delay 5 matrix kick %player% KillAura'
 
 ## HitBox
@@ -189,9 +190,10 @@ hitbox:
   # Violation Thresholds
   # number_of_violations: '<command>'
   commands:
-    10: 'matrix notify %player% tried to reach entity outside max reach distance (HitBox)'
-    12: 'matrix npc %player% 120'
-    15: 'matrix notify %player% tried to reach entity outside max reach distance (HitBox) #2'
+    1: 'matrix notify %player% tried to reach entity outside max reach distance (HitBox)'
+    #10: 'matrix notify %player% tried to reach entity outside max reach distance (HitBox)'
+    #12: 'matrix npc %player% 120'
+    #15: 'matrix notify %player% tried to reach entity outside max reach distance (HitBox) #2'
     #24: 'matrix kick %player% Reach/HitBox Hacks'
 
 ## Click check
@@ -223,8 +225,9 @@ click:
   # Violation Thresholds
   # number_of_violations: '<command>'
   commands:
-    10: 'matrix notify %player% tried to click abnormally (Click) #1'
-    18: 'matrix notify %player% tried to click abnormally (Click) #2'
+    1: 'matrix notify %player% tried to click abnormally (Click) #1'
+    #10: 'matrix notify %player% tried to click abnormally (Click) #1'
+    #18: 'matrix notify %player% tried to click abnormally (Click) #2'
     #30: 'matrix kick %player% Click Abnormally'
 
 ## Movement Speed Check
@@ -277,8 +280,9 @@ move:
   # Violation Thresholds
   # number_of_violations: '<command>'
   commands:
-    55: 'matrix notify %player% tried to move abnormally (Move) #1'
-    90: 'matrix notify %player% tried to move abnormally (Move) #2'
+    1: 'matrix notify %player% tried to move abnormally (Move) #1'
+    #55: 'matrix notify %player% tried to move abnormally (Move) #1'
+    #90: 'matrix notify %player% tried to move abnormally (Move) #2'
     #220: 'matrix kick %player% Move Abnormally'
 
 ## BadPackets
@@ -309,8 +313,9 @@ badpackets:
   # Violation Thresholds
   # number_of_violations: '<command>'
   commands:
-    100: 'matrix notify %player% is sending unusual packets to server (BadPackets) #1'
-    150: 'matrix notify %player% is sending unusual packets to server (BadPackets) #2'
+    1: 'matrix notify %player% is sending unusual packets to server (BadPackets) #1'
+    #100: 'matrix notify %player% is sending unusual packets to server (BadPackets) #1'
+    #150: 'matrix notify %player% is sending unusual packets to server (BadPackets) #2'
     #240: 'matrix kick %player% Sending Unusual Packets'
 
 ## Delay Check
@@ -340,8 +345,9 @@ delay:
   # Violation Thresholds
   # number_of_violations: '<command>'
   commands:
-    3: 'matrix notify %player% is tring to speed up actions (Delay) #1'
-    5: 'matrix notify %player% is tring to speed up actions (Delay) #2'
+    1: 'matrix notify %player% is tring to speed up actions (Delay) #1'
+    #3: 'matrix notify %player% is tring to speed up actions (Delay) #1'
+    #5: 'matrix notify %player% is tring to speed up actions (Delay) #2'
     #10: 'matrix kick %player% Speeding Up Operations'
 
 ## Block
@@ -382,7 +388,8 @@ block:
   # Violation Thresholds
   # number_of_violations: '<command>'
   commands:
-    10: 'matrix notify %player% tried to place/break a block too quickly (FastPlace/FastBreak)'
+    1: 'matrix notify %player% tried to place/break a block too quickly (FastPlace/FastBreak)'
+    #10: 'matrix notify %player% tried to place/break a block too quickly (FastPlace/FastBreak)'
     #20: 'matrix kick %player% FastPlace/FastBreak Hacks'
 
 ## Scaffold check
@@ -426,8 +433,9 @@ scaffold:
   # Violation Thresholds
   # number_of_violations: '<command>'
   commands:
-    10: 'matrix notify %player% tried to bridge blocks quickly (Scaffold)'
-    15: 'matrix notify %player% tried to bridge blocks quickly (Scaffold) #2'
+    1: 'matrix notify %player% tried to bridge blocks quickly (Scaffold)'
+    #10: 'matrix notify %player% tried to bridge blocks quickly (Scaffold)'
+    #15: 'matrix notify %player% tried to bridge blocks quickly (Scaffold) #2'
     #24: 'matrix kick %player% Scaffold/Tower'
 
 ## Jesus
@@ -451,8 +459,9 @@ jesus:
   # Violation Thresholds
   # number_of_violations: '<command>'
   commands:
-    20: 'matrix notify %player% tried to move illegally in liquid (Jesus)'
-    40: 'matrix notify %player% tried to move illegally in liquid (Jesus) #2'
+    1: 'matrix notify %player% tried to move illegally in liquid (Jesus)'
+    #20: 'matrix notify %player% tried to move illegally in liquid (Jesus)'
+    #40: 'matrix notify %player% tried to move illegally in liquid (Jesus) #2'
     #50: 'matrix kick %player% Jesus/WaterSpeed/WaterFly Hacks'
 
 ## Velocity
@@ -484,8 +493,9 @@ velocity:
   # Violation Thresholds
   # number_of_violations: '<command>'
   commands:
-    10: 'matrix notify %player% tried to ignore server velocity (Velocity)'
-    15: 'matrix notify %player% tried to ignore server velocity (Velocity) #2'
+    1: 'matrix notify %player% tried to ignore server velocity (Velocity)'
+    #10: 'matrix notify %player% tried to ignore server velocity (Velocity)'
+    #15: 'matrix notify %player% tried to ignore server velocity (Velocity) #2'
     #20: 'matrix kick %player% Velocity/Anti-Knockback'
 
 ## Spam
@@ -508,7 +518,8 @@ chat:
   # Violation Thresholds
   # number_of_violations: '<command>'
   commands:
-    4: 'matrix notify %player% is spamming the chat (ChatSpam)'
+    1: 'matrix notify %player% is spamming the chat (ChatSpam)'
+    #4: 'matrix notify %player% is spamming the chat (ChatSpam)'
     #10: 'matrix kick %player% Stop spamming the chat!'
 
 ## Interact
@@ -528,7 +539,8 @@ interact:
   # Violation Thresholds
   # number_of_violations: '<command>'
   commands:
-    10: 'matrix notify %player% tried to illegally interact with Entity/Block (Interact)'
+    1: 'matrix notify %player% tried to illegally interact with Entity/Block (Interact)'
+    #10: 'matrix notify %player% tried to illegally interact with Entity/Block (Interact)'
     #15: 'matrix kick %player% Illegally Interacting with Block/Entity'
 
 ## Phase
@@ -558,8 +570,9 @@ phase:
   # Violation Thresholds
   # number_of_violations: '<command>'
   commands:
-    7: 'matrix notify %player% is phase into block (Phase)'
-    13: 'matrix notify %player% is phase into block (Phase) #2'
+    1: 'matrix notify %player% is phase into block (Phase)'
+    #7: 'matrix notify %player% is phase into block (Phase)'
+    #13: 'matrix notify %player% is phase into block (Phase) #2'
 
 ## AutoBot
 # Check prevents player use some Bot mods like Baritone
@@ -576,8 +589,9 @@ autobot:
   # Violation Thresholds
   # number_of_violations: '<command>'
   commands:
-    5: 'matrix notify %player% suspected use of automatic robots (AutoBot)'
-    10: 'matrix notify %player% suspected use of automatic robots (AutoBot) #2'
+    1: 'matrix notify %player% suspected use of automatic robots (AutoBot)'
+    #5: 'matrix notify %player% suspected use of automatic robots (AutoBot)'
+    #10: 'matrix notify %player% suspected use of automatic robots (AutoBot) #2'
     #15: 'matrix kick %player% Auto-Bot'
 
 ## Elytra
@@ -606,8 +620,9 @@ elytra:
   # Violation Thresholds
   # number_of_violations: '<command>'
   commands:
-    10: 'matrix notify %player% suspected using elytra flight (Elytra)'
-    20: 'matrix notify %player% suspected using elytra flight (Elytra) #2'
+    1: 'matrix notify %player% suspected using elytra flight (Elytra)'
+    #10: 'matrix notify %player% suspected using elytra flight (Elytra)'
+    #20: 'matrix notify %player% suspected using elytra flight (Elytra) #2'
     #40: 'matrix kick %player% Elytra Flight'
 
 ## Vehicle
@@ -649,6 +664,7 @@ vehicle:
   # Violation Thresholds
   # number_of_violations: '<command>'
   commands:
-    5: 'matrix notify %player% suspected using vehicle cheat (Vehicle)'
-    10: 'matrix notify %player% suspected using vehicle cheat (Vehicle) #2'
+    1: 'matrix notify %player% suspected using vehicle cheat (Vehicle)'
+    #5: 'matrix notify %player% suspected using vehicle cheat (Vehicle)'
+    #10: 'matrix notify %player% suspected using vehicle cheat (Vehicle) #2'
     #17: 'matrix kick %player% Suspicious vehicle movement'
